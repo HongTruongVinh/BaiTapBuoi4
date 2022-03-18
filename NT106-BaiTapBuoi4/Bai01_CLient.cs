@@ -17,8 +17,8 @@ namespace NT106_BaiTapBuoi4
         {
             InitializeComponent();
 
-            tb_IPRemoteHost.Text = "172.0.0.1";
-            tb_Port.Text = "1800";
+            tb_IPRemoteHost.Text = "127.0.0.1";
+            tb_Port.Text = "8001";
         }
 
         private void btn_Sent_Click(object sender, EventArgs e)

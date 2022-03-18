@@ -59,12 +59,16 @@ namespace NT106_BaiTapBuoi4
         {
             Bai01_CLient client = new Bai01_CLient();
             client.Show();
+
+            (sender as Button).Enabled = false;
         }
 
         private void btn_OpenServer1_Click(object sender, EventArgs e)
         {
             Bai01_Server server = new Bai01_Server();
             server.Show();
+
+            (sender as Button).Enabled = false;
         }
     }
 }

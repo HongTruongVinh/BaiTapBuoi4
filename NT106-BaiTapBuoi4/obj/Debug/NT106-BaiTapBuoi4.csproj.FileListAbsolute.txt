@@ -9,3 +9,4 @@ C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.CoreCompileInputs.cache
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.exe
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.pdb
+C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.AssemblyReference.cache

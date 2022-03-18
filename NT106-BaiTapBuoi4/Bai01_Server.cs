@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -16,20 +17,19 @@ namespace NT106_BaiTapBuoi4
     public partial class Bai01_Server : Form
     {
         Thread udpServer;
-        bool _exit;
+        bool _exit = false;
         private delegate void SafeCallDelegate(string text);
 
         public Bai01_Server()
         {
             InitializeComponent();
 
-            _exit = false;
-
             lv_Message.View = View.Details;
 
             lv_Message.Columns.Add("Content");
+            lv_Message.Columns[0].Width = 400;
 
-            tb_HostPort.Text = "1800";
+            tb_HostPort.Text = "8001";
         }
 
         public void serverThread()
@@ -46,9 +46,64 @@ namespace NT106_BaiTapBuoi4
 
                 byte[] receiveByte = udpClient.Receive(ref remoteIPEndPoint);
                 string returnData = Encoding.UTF8.GetString(receiveByte);
-                string message = remoteIPEndPoint.Address.ToString() + ": " + returnData.ToString();
 
-                UpdateReceiveMessage(message);
+                // Nếu data nhận đc có Lenght > 7 sẽ cắt chỗi data ra để thực hiện CLOSEAPP hoặc OPEN file
+                string open = "";
+                string path = "";
+                string[] fileName = { null, null };
+                if (returnData.Length > 7)
+                {
+                    open = returnData.Substring(0, 4);
+                    path = returnData.Substring(5);
+                    fileName = path.Split('.');
+                }
+
+                if (returnData == "CLOSEAPP")
+                {
+                    _exit = true;
+                    udpServer = null;
+                    Environment.Exit(0);
+                }
+                else if (open == "OPEN" && fileName[1] == "txt") // OPEN#C:\Users\HONG VINH\OneDrive\Desktop\New folder\f1.txt
+                {
+                    try
+                    {
+                        string message = remoteIPEndPoint.Address.ToString() + ": " + returnData.ToString();
+
+                        UpdateReceiveMessage(message);
+
+                        foreach (string line in System.IO.File.ReadLines(path))
+                        {
+                            try
+                            {
+                                if (lv_Message.InvokeRequired)
+                                {
+                                    var delgate = new SafeCallDelegate(UpdateReceiveMessage);
+                                    lv_Message.Invoke(delgate, new object[] { line });
+                                }
+                                else
+                                {
+                                    ListViewItem item = new ListViewItem(line);
+                                    lv_Message.Items.Add(item);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    string message = remoteIPEndPoint.Address.ToString() + ": " + returnData.ToString();
+
+                    UpdateReceiveMessage(message);
+                }
             }
         }
 

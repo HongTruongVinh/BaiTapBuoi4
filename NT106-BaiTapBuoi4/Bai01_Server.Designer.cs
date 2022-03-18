@@ -107,6 +107,7 @@ namespace NT106_BaiTapBuoi4
             this.Controls.Add(this.tb_HostPort);
             this.Controls.Add(this.label2);
             this.Name = "Bai01_Server";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bai01_Server";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -64,11 +64,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bai02_Client.cs">
+    <Compile Include="Bai10_Client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bai02_Client.Designer.cs">
-      <DependentUpon>Bai02_Client.cs</DependentUpon>
+    <Compile Include="Bai10_Client.Designer.cs">
+      <DependentUpon>Bai10_Client.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +78,8 @@
     <EmbeddedResource Include="Bai01_Server.resx">
       <DependentUpon>Bai01_Server.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bai02_Client.resx">
-      <DependentUpon>Bai02_Client.cs</DependentUpon>
+    <EmbeddedResource Include="Bai10_Client.resx">
+      <DependentUpon>Bai10_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

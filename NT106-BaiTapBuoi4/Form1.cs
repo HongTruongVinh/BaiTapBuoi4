@@ -73,7 +73,7 @@ namespace NT106_BaiTapBuoi4
 
         private void btn_OpenCLient2_Click(object sender, EventArgs e)
         {
-            Bai02_Client client = new Bai02_Client();
+            Bai10_Client client = new Bai10_Client();
             client.Show();
 
             (sender as Button).Enabled = false;

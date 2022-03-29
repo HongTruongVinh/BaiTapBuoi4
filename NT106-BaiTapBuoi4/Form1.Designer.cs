@@ -74,6 +74,7 @@ namespace NT106_BaiTapBuoi4
             this.btn_OpenCLient2.TabIndex = 3;
             this.btn_OpenCLient2.Text = "Client";
             this.btn_OpenCLient2.UseVisualStyleBackColor = true;
+            this.btn_OpenCLient2.Click += new System.EventHandler(this.btn_OpenCLient2_Click);
             // 
             // rdBtn_Bai1
             // 

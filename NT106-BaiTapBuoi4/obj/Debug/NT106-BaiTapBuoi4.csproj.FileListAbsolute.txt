@@ -10,3 +10,17 @@ C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.exe
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.pdb
 C:\Users\HONG VINH\source\repos\NT106-BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.AssemblyReference.cache
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\bin\Debug\NT106-BaiTapBuoi4.exe.config
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\bin\Debug\NT106-BaiTapBuoi4.exe
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\bin\Debug\NT106-BaiTapBuoi4.pdb
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.AssemblyReference.cache
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Bai01_CLient.resources
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Bai01_Server.resources
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Form1.resources
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Properties.Resources.resources
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.GenerateResource.cache
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.csproj.CoreCompileInputs.cache
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.exe
+C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.pdb
+C:\Users\Vasilias Da Nykta\source\repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Bai02_Client.resources

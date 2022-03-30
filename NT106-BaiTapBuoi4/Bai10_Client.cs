@@ -36,8 +36,9 @@ namespace NT106_BaiTapBuoi4
                 chatClient.Connect(severIP, port);
                 if (chatClient.Connected)
                 {
+                    stream = chatClient.GetStream();
                     btnSend.Enabled = true;
-                    //btnConnect.Enabled = false;
+                    btnConnect.Enabled = false;
                     recordMessage("Đã kết nối với Sever!");
                     Thread thdClient = new Thread(new ThreadStart(clientThread));
                     thdClient.IsBackground = true;
@@ -60,19 +61,11 @@ namespace NT106_BaiTapBuoi4
         {
             while (true)
             {
-                stream = chatClient.GetStream();
                 byte[] data = new Byte[256];
                 int bytes = stream.Read(data, 0, data.Length);
                 String responseData = Encoding.UTF8.GetString(data, 0, bytes);
                 responseData = responseData.ToUpper();
                 recordMessage(responseData);
-                //if (!chatClient.Connected)
-                //{
-                //    recordMessage("Sever đã ngắt kết nối!");
-                //    chatClient.Close();
-                //    btnConnect.Enabled = true;
-                //    return;
-                //}
             }
         }
 
@@ -91,9 +84,9 @@ namespace NT106_BaiTapBuoi4
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            stream = chatClient.GetStream();
             byte[] data = Encoding.UTF8.GetBytes(txtMessage.Text);
             stream.Write(data, 0, data.Length);
+            txtMessage.Text = String.Empty;
         }
     }
 }

@@ -82,6 +82,7 @@
             // txtResults
             // 
             this.txtResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResults.Enabled = false;
             this.txtResults.Location = new System.Drawing.Point(68, 155);
             this.txtResults.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtResults.Multiline = true;

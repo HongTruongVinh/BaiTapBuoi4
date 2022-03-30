@@ -77,7 +77,7 @@
             this.txtPort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPort.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPort.Location = new System.Drawing.Point(105, 37);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(4);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(162, 27);
             this.txtPort.TabIndex = 10;
@@ -86,9 +86,10 @@
             // txtResults
             // 
             this.txtResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResults.Enabled = false;
             this.txtResults.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResults.Location = new System.Drawing.Point(66, 113);
-            this.txtResults.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtResults.Margin = new System.Windows.Forms.Padding(4);
             this.txtResults.Multiline = true;
             this.txtResults.Name = "txtResults";
             this.txtResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;

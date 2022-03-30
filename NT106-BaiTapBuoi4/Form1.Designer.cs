@@ -65,6 +65,7 @@ namespace NT106_BaiTapBuoi4
             this.btn_OpenServer2.TabIndex = 4;
             this.btn_OpenServer2.Text = "Server";
             this.btn_OpenServer2.UseVisualStyleBackColor = true;
+            this.btn_OpenServer2.Click += new System.EventHandler(this.btn_OpenServer2_Click);
             // 
             // btn_OpenCLient2
             // 

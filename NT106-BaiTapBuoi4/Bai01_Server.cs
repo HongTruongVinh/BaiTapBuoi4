@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NT106_BaiTapBuoi4
@@ -130,7 +123,7 @@ namespace NT106_BaiTapBuoi4
 
         private void btn_Listen_Click(object sender, EventArgs e)
         {
-            if(tb_HostPort.Text == "")
+            if (tb_HostPort.Text == "")
             {
                 MessageBox.Show("Please enter your Host Port");
                 return;
@@ -146,7 +139,7 @@ namespace NT106_BaiTapBuoi4
                     return;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

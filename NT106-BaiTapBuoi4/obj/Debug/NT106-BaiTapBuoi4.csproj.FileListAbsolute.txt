@@ -24,3 +24,4 @@ C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\
 C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.exe
 C:\Users\Vasilias Da Nykta\Source\Repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106-BaiTapBuoi4.pdb
 C:\Users\Vasilias Da Nykta\source\repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Bai10_Client.resources
+C:\Users\Vasilias Da Nykta\source\repos\BaiTapBuoi4\NT106-BaiTapBuoi4\obj\Debug\NT106_BaiTapBuoi4.Bai10_Sever.resources

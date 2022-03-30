@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NT106_BaiTapBuoi4
@@ -75,6 +68,14 @@ namespace NT106_BaiTapBuoi4
         {
             Bai10_Client client = new Bai10_Client();
             client.Show();
+
+            (sender as Button).Enabled = false;
+        }
+
+        private void btn_OpenServer2_Click(object sender, EventArgs e)
+        {
+            Bai10_Sever sever = new Bai10_Sever();
+            sever.Show();
 
             (sender as Button).Enabled = false;
         }

@@ -33,12 +33,21 @@ namespace NT106_BaiTapBuoi4
             }
             try
             {
-                chatClient.ConnectAsync(severIP, port);
-                //btnConnect.Enabled = false;
-                recordMessage("Đã kết nối với Sever!");
-                Thread thdClient = new Thread(new ThreadStart(clientThread));
-                thdClient.IsBackground = true;
-                thdClient.Start();
+                chatClient.Connect(severIP, port);
+                if (chatClient.Connected)
+                {
+                    btnSend.Enabled = true;
+                    //btnConnect.Enabled = false;
+                    recordMessage("Đã kết nối với Sever!");
+                    Thread thdClient = new Thread(new ThreadStart(clientThread));
+                    thdClient.IsBackground = true;
+                    thdClient.Start();
+                }
+                else
+                {
+                    MessageBox.Show("Kết nối thất bại!");
+                    return;
+                }    
             }
             catch (Exception ex)
             {

@@ -101,6 +101,7 @@
             // 
             // btnSend
             // 
+            this.btnSend.Enabled = false;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSend.Location = new System.Drawing.Point(562, 87);
             this.btnSend.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

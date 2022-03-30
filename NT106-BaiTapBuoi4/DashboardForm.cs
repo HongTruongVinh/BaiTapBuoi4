@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace NT106_BaiTapBuoi4
 {
-    public partial class Form1 : Form
+    public partial class DashboardForm : Form
     {
-        public Form1()
+        public DashboardForm()
         {
             InitializeComponent();
 
@@ -78,6 +78,16 @@ namespace NT106_BaiTapBuoi4
             sever.Show();
 
             (sender as Button).Enabled = false;
+        }
+
+        private void danhSáchThànhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Danh Sách Thành Viên\r\n\r\n" +
+                "1 Bùi Hải Đăng\t\t20521156\r\n" +
+                "2 Trần Kiến Quốc\t\t20520293\r\n" +
+                "3 Hồng Trường Vinh\t20522157\r\n" +
+                "4 Lý Quốc Kiệt\t\t20521496\r\n" +
+                "5 Vũ Thành Đạt\t\t20521181\r\n");
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace NT106_BaiTapBuoi4
 {
-    partial class Form1
+    partial class DashboardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,10 @@ namespace NT106_BaiTapBuoi4
             this.btn_OpenCLient2 = new System.Windows.Forms.Button();
             this.rdBtn_Bai1 = new System.Windows.Forms.RadioButton();
             this.rdBtn_Bai10 = new System.Windows.Forms.RadioButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchThànhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_OpenCLient1
@@ -103,7 +107,34 @@ namespace NT106_BaiTapBuoi4
             this.rdBtn_Bai10.UseVisualStyleBackColor = true;
             this.rdBtn_Bai10.CheckedChanged += new System.EventHandler(this.rdBtn_Bai10_CheckedChanged);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip1.Size = new System.Drawing.Size(672, 28);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.danhSáchThànhViênToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // danhSáchThànhViênToolStripMenuItem
+            // 
+            this.danhSáchThànhViênToolStripMenuItem.Name = "danhSáchThànhViênToolStripMenuItem";
+            this.danhSáchThànhViênToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.danhSáchThànhViênToolStripMenuItem.Text = "Danh Sách Thành Viên ";
+            this.danhSáchThànhViênToolStripMenuItem.Click += new System.EventHandler(this.danhSáchThànhViênToolStripMenuItem_Click);
+            // 
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,8 +145,11 @@ namespace NT106_BaiTapBuoi4
             this.Controls.Add(this.btn_OpenCLient2);
             this.Controls.Add(this.btn_OpenServer1);
             this.Controls.Add(this.btn_OpenCLient1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.menuStrip1);
+            this.Name = "DashboardForm";
+            this.Text = "Dashboard";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +163,9 @@ namespace NT106_BaiTapBuoi4
         private System.Windows.Forms.Button btn_OpenCLient2;
         private System.Windows.Forms.RadioButton rdBtn_Bai1;
         private System.Windows.Forms.RadioButton rdBtn_Bai10;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhSáchThànhViênToolStripMenuItem;
     }
 }
 
